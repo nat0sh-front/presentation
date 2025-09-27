@@ -1,6 +1,6 @@
 .slide_00 {
-  background-image: url("../images/background_pink.svg"),
-    url("../images/slide00/background_blue_long.svg");
+  background-image: url("/images/background_pink.svg"),
+    url("/images/slide00/background_blue_long.svg");
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
   background-size: auto, auto;
@@ -18,7 +18,6 @@
 .main__text {
   font-weight: 400;
   font-size: 45px;
-  line-height: 130%;
   color: #313e80;
   width: 2050px;
   opacity: 0;

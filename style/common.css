@@ -11,9 +11,7 @@ body {
   margin: 0;
   width: 2360px;
   height: 1640px;
-  overflow: hidden;
   font-family: var(--main-font-family), sans-serif;
-  line-height: 130%;
 }
 
 div {
@@ -26,6 +24,7 @@ h1,
 h2 {
   margin: 0;
   padding: 0;
+  line-height: 130%;
 }
 
 a {
@@ -58,7 +57,6 @@ a {
   font-family: var(--main-font-family), sans-serif;
   font-weight: 700;
   font-size: 40px;
-  line-height: 130%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -83,10 +81,8 @@ a {
 }
 
 .footer__text {
-  font-family: var(--main-font-family), sans-serif;
   font-weight: 400;
   font-size: 30px;
-  line-height: 130%;
 }
 
 .popup {
@@ -109,7 +105,7 @@ a {
   left: 0;
   width: 100%;
   height: 540px;
-  background: url('../images/popup_background.svg');
+  background: url('/images/popup_background.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -129,9 +125,9 @@ a {
   border: none;
   cursor: pointer;
   clip-path: polygon(
-    25px 0,                     /* срез верхнего левого угла */
+    25px 0,                     
     100% 0,
-    100% calc(100% - 25px),     /* срез нижнего правого угла */
+    100% calc(100% - 25px),     
     calc(100% - 25px) 100%,
     0 100%,
     0 25px
@@ -145,7 +141,6 @@ a {
 }
 
 .popup__text {
-  font-family: var(--main-font-family), sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 120%;
@@ -162,15 +157,22 @@ a {
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; }
-  to   { opacity: 0; }
+  from {
+    opacity: 1; 
+  }
+  to { 
+    opacity: 0; 
+  }
 }
 
 @keyframes popupHide {
-  from { bottom: 0; }
-  to   { bottom: -100%; }
+  from { 
+    bottom: 0; 
+  }
+  to   { 
+    bottom: -100%; 
+  }
 }
-
 
 @keyframes popupShow {
   from {

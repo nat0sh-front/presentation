@@ -21,7 +21,6 @@
 .description__text {
     font-weight: 400;
     font-size: 45px;
-    line-height: 130%;
     color: var(--main-text-color);
     width: 790px;
 }

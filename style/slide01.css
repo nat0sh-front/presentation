@@ -1,5 +1,5 @@
 .slide_01 {
-  background-image: url("../images/slide01/background.svg");
+  background-image: url("/images/slide01/background.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -14,7 +14,6 @@
   font-stretch: 75%;
   font-weight: 600;
   font-size: 180px;
-  line-height: 130%;
   color: var(--main-text-color);
   text-align: left;
   margin-top: 240px;
