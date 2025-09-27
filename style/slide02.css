@@ -19,7 +19,6 @@
 }
 
 .description__text {
-    font-family: var(--main-font-family), sans-serif;
     font-weight: 400;
     font-size: 45px;
     line-height: 130%;
@@ -55,7 +54,6 @@
 }
 
 .caption__text {
-    font-family: var(--main-font-family);
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
@@ -132,7 +130,7 @@
   justify-content: center;
   width: 185px;
   height: 70px;
-  background: #2fafdc;
+  background: var(--label-color);
   clip-path: polygon(
     30px 0,                     /* срез верхнего левого угла */
     100% 0,
@@ -144,7 +142,6 @@
 }
 
 .gallery__item-year {
-    font-family: var(--main-font-family);
     font-weight: 700;
     font-size: 45px;
     line-height: 120%;

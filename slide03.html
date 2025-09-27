@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/slide03.css">
+    <title>Slide 03</title>
+</head>
+
+<body>
+    <div class="slide slide_03">
+        <div class="main">
+            <h1 class="main__title">Патогенез болезни Альцгеймера</h1>
+            <div class="content">
+                <div class="diagram">
+                    <div class="block">
+                        <img src="./images/slide03/arrow_down.svg" alt="Стрелка вниз">
+                        <span class="block__text">Снижение перфузии или амилоидоз головного мозга</span>
+                    </div>
+
+                    <img class="diagram__arrow" src="./images/slide03/diagram_arrow.svg" alt="Стрелка диаграммы">
+
+                    <div class="block">
+                        <img src="./images/slide03/arrow_broken.svg" alt="Стрелка ломанная">
+                        <span class="block__text">Значительное увеличение концентрации глутамата</span>
+                    </div>
+
+                    <img class="diagram__arrow" src="./images/slide03/diagram_arrow.svg" alt="Стрелка диаграммы">
+
+                    <div class="block block-small">
+                        <img src="./images/slide03/check_mark.svg" alt="Галочка">
+                        <span class="block__text">Активация NMDA рецепторов</span>
+                    </div>
+
+                    <div class="arrow_wrapper">
+                        <img class="diagram__arrow" src="./images/slide03/diagram_arrow.svg" alt="Стрелка диаграммы">
+                        <img class="diagram__arrow" src="./images/slide03/diagram_arrow.svg" alt="Стрелка диаграммы">
+                    </div>
+
+                    <div class="block_wrapper">
+                        <div class="block block-large">
+                            <span class="block__text">Дестабилизация и отек клеточной мембраны, блокирование работы Ca/Na насоса</span>
+                        </div>
+                        <img class="diagram__arrow" src="./images/slide03/diagram_arrow.svg" alt="Стрелка диаграммы">
+                        <div class="block block-large">
+                            <span class="block__text">Повреждение нейронов, некроз, апоптоз, ацетилхолинергический дефицит</span>
+                        </div>
+                    </div>
+
+                    <div class="arrow_wrapper arrow_wrapper-slim">
+                        <img class="diagram__arrow" src="./images/slide03/diagram_arrow.svg" alt="Стрелка диаграммы">
+                        <img class="diagram__arrow" src="./images/slide03/diagram_arrow.svg" alt="Стрелка диаграммы">
+                    </div>
+
+                    <div class="block block-accent">
+                        <span class="block__text">Когнитивный дефицит Деменция</span>
+                    </div>
+                </div>
+                <div class="illustration">
+                    <img class="illustration__image" src="./images/slide03/memantin_mechanism.png" alt="Мемантин механизм действия">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2 class="footer__title">
+                Деменция. Болезнь Альцгеймера
+            </h2>
+            <div class="footer__nav">
+                <button class="footer__button button__home">
+                    <a href="slide00.html" class="footer__button button__home">
+                        <img class="button__image" src="./images/home_icon.svg" alt="Домой">
+                    </a>
+                </button>
+                <button class="footer__button button__info">
+                    <img class="button__image" src="./images/info_icon.svg" alt="Информация">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-info">
+        <div class="popup__overlay"></div>
+        <div class="popup__body">
+            <button class="popup__close">
+                <img class="popup__close-icon" src="./images/close_icon.svg" alt="Закрыть">
+            </button>
+            <div class="popup__content">
+                <p class="popup__text">
+                    Левин О.С. Принципы долговременной терапии деменции. РМЖ. 2007;24:1772 
+                    <a href="http://www.rmj.ru/articles/nevrologiya/Principy_dolgovremennoy_terapii_demencii/#ixzz7rCIeTJhc" target="_blank">http://www.rmj.ru/articles/nevrologiya/Principy_dolgovremennoy_terapii_demencii/#ixzz7rCIeTJhc</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/common.js"></script>
+
+</html>

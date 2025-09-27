@@ -6,30 +6,26 @@
 }
 
 .main {
-  position: relative;
+  display: flex;
+  gap: 290px;
 }
 
 .main__title {
-  font-family: var(--main-font-family), sans-serif;
   font-stretch: 75%;
   font-weight: 600;
   font-size: 180px;
   line-height: 130%;
   color: var(--main-text-color);
   text-align: left;
-  margin-left: 150px;
-  margin-top: 391px;
+  margin-top: 240px;
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
 }
 
 .main__image {
-  width: 1076px;
-  height: 1054px;
-  position: absolute;
-  top: 285px;
-  right: 205px;
-  transform: translateX(1300px);
+  width: 1075px;
+  margin-top: 135px;
+  transform: translateX(100%);
   animation: slideIn 1.5s ease forwards;
   animation-delay: 0.5s;
 }
@@ -39,6 +35,9 @@
 }
 
 @keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
   to {
     transform: translateX(0);
   }
