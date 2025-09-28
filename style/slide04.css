@@ -5,7 +5,7 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 520px;
     position: relative;
 }
 
@@ -17,35 +17,34 @@
 
 .main__subtitle {
     font-weight: 700;
-    font-size: 70px;
-    color: var(--main-text-color);
-    z-index: 1;
-}
-
-.title_wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 200px;
-    align-self: center;
-}
-
-.main__text {
-    font-weight: 700;
     font-size: 60px;
     line-height: 120%;
     color: var(--secondary-text-color);
-    position: absolute;
-    top: 760px;
-    left: 150px;
     max-width: 500px;
 }
 
-.main__image {
+.iceberg {
+  background-image: url('/images/slide04/iceberg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   top: 300px;
   left: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  width: 770px;
+  height: 1140px;
+  padding: 200px 250px;
   animation: iceberg-drift 6s ease-in-out infinite;
   transform-origin: 50% 100%;
+}
+
+.iceberg__text {
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--main-text-color);
 }
 
 @keyframes iceberg-drift {
