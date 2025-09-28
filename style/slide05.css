@@ -1,121 +1,114 @@
 .main {
-    background-image: url('../images/background_pink.svg'),
-    url('../images/background_blue_short.svg');
-    background-position: top right, bottom left;
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, 35%;
-    padding: 0;
-    padding-left: 150px;
+  background-image: url("../images/background_pink.svg"),
+    url("../images/background_blue_short.svg");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, 35%;
+  padding: 0;
+  padding-left: 150px;
 }
 
 .main__title {
-    font-weight: 600;
-    font-size: 80px;
-    line-height: 120%;
-    color: var(--main-text-color);
-    margin-top: 110px;
-    margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 120%;
+  color: var(--main-text-color);
+  margin-top: 110px;
+  margin-bottom: 25px;
 }
 
 .main__text {
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 120%;
-    color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  color: var(--main-text-color);
 }
 
 .chart {
-    width: 2100px;
-    height: 855px;
-    background-image: url('/images/slide05/chart.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    margin-top: 70px;
-    margin-bottom: 15px;
-    display: flex;
-    gap: 112px;
-    padding: 50px 0 75px 350px;
+  width: 2100px;
+  height: 855px;
+  background-image: url("/images/slide05/chart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 112px;
+  padding: 50px 0 75px 350px;
 }
 
 .chart__bar {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 304px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 40px;
-    opacity: 0;
-    animation: fadeIn 0.6s ease forwards;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 304px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 40px;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
 }
 
 .chart__bar-india {
-    background-image: url('/images/slide05/chart_bar_india.svg');
+  background-image: url("/images/slide05/chart_bar_india.svg");
 }
 
 .chart__bar-turkey {
-    background-image: url('/images/slide05/chart_bar_turkey.svg');
+  background-image: url("/images/slide05/chart_bar_turkey.svg");
 }
 
 .chart__bar-argentina {
-    background-image: url('/images/slide05/chart_bar_argentina.svg');
+  background-image: url("/images/slide05/chart_bar_argentina.svg");
 }
 
 .chart__bar-poland {
-    background-image: url('/images/slide05/chart_bar_poland.svg');
+  background-image: url("/images/slide05/chart_bar_poland.svg");
 }
 
 .chart__label {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 120%;
-    color: var(--secondary-text-color);
-    opacity: 0;
-    animation: fadeIn 0.4s ease forwards;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: var(--secondary-text-color);
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
 }
 
 .main__extra {
-    display: flex;
-    gap: 100px;
-    align-items: center;
+  display: flex;
+  gap: 100px;
+  align-items: center;
 }
 
 .button__back {
-    width: 300px;
-    height: 100px;
-    background-color: var(--accent-color);
-    clip-path: polygon(
-        30px 0,
-        100% 0, 
-        100% 100%,  
-        30px 100%,  
-        0 50px,     
-        0 50px    
-    );
-    border: none;
-    outline: none;
-    color: var(--secondary-text-color);
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 120%;
-    letter-spacing: 0.05em;
+  width: 300px;
+  height: 100px;
+  background-color: var(--accent-color);
+  clip-path: polygon(30px 0, 100% 0, 100% 100%, 30px 100%, 0 50px, 0 50px);
+  border: none;
+  outline: none;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.05em;
 }
 
 .main__subtitle {
-    font-weight: 700;
-    font-size: 54px;
-    line-height: 120%;
-    color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 120%;
+  color: var(--main-text-color);
 }
 
 .footer__text {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 120%;
-    text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: left;
 }
 
 .chart__bar-india {
