@@ -1,3 +1,34 @@
+body {
+  margin: 0;
+  width: 2360px;
+  height: 1640px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+p,
+span,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 130%;
+  color: #20336e;
+}
+
+a {
+  color: inherit;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .slide_01 {
   background-image: url("/images/slide01/background.svg");
   background-position: bottom right;
@@ -6,6 +37,8 @@
 }
 
 .main {
+  flex: 1;
+  padding: 150px;
   display: flex;
   gap: 290px;
 }
@@ -14,7 +47,6 @@
   font-stretch: 75%;
   font-weight: 600;
   font-size: 180px;
-  color: var(--main-text-color);
   text-align: left;
   margin-top: 240px;
   opacity: 0;
@@ -30,7 +62,29 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-inline: 130px;
+  height: 150px;
+  background-color: #00954d;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 30px;
+  width: 100%;
+  text-align: right;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {

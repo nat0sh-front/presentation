@@ -1,8 +1,41 @@
+body {
+  margin: 0;
+  width: 2360px;
+  height: 1640px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+p,
+span,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 130%;
+  color: #20336e;
+}
+
+a {
+  color: inherit;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .main {
   background-image: url("/images/slide04/background_ocean.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  flex: 1;
+  padding: 150px;
   display: flex;
   flex-direction: column;
   gap: 520px;
@@ -12,14 +45,13 @@
 .main__title {
   font-weight: 600;
   font-size: 90px;
-  color: var(--main-text-color);
 }
 
 .main__subtitle {
   font-weight: 700;
   font-size: 60px;
   line-height: 120%;
-  color: var(--secondary-text-color);
+  color: #fff;
   max-width: 500px;
 }
 
@@ -44,7 +76,38 @@
 .iceberg__text {
   font-weight: 700;
   font-size: 70px;
-  color: var(--main-text-color);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 150px;
+  height: 150px;
+  background-color: #00954d;
+  z-index: 2;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 50px;
+}
+
+.footer__button {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 @keyframes iceberg-drift {

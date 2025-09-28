@@ -1,10 +1,40 @@
+body {
+  margin: 0;
+  width: 2360px;
+  height: 1640px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+p,
+span,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #20336e;
+  line-height: 130%;
+}
+
+a {
+  color: inherit;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .main {
-  background-image: url("../images/background_pink.svg"),
-    url("../images/background_blue_short.svg");
+  background-image: url("../images/slide05/background_pink.svg"),
+    url("../images/slide05/background_blue_short.svg");
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
   background-size: contain, 35%;
-  padding: 0;
   padding-left: 150px;
 }
 
@@ -12,7 +42,6 @@
   font-weight: 600;
   font-size: 80px;
   line-height: 120%;
-  color: var(--main-text-color);
   margin-top: 110px;
   margin-bottom: 25px;
 }
@@ -21,7 +50,6 @@
   font-weight: 400;
   font-size: 60px;
   line-height: 120%;
-  color: var(--main-text-color);
 }
 
 .chart {
@@ -71,44 +99,9 @@
   font-weight: 600;
   font-size: 40px;
   line-height: 120%;
-  color: var(--secondary-text-color);
+  color: #fff;
   opacity: 0;
   animation: fadeIn 0.4s ease forwards;
-}
-
-.main__extra {
-  display: flex;
-  gap: 100px;
-  align-items: center;
-}
-
-.button__back {
-  width: 300px;
-  height: 100px;
-  background-color: var(--accent-color);
-  clip-path: polygon(30px 0, 100% 0, 100% 100%, 30px 100%, 0 50px, 0 50px);
-  border: none;
-  outline: none;
-  color: var(--secondary-text-color);
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 120%;
-  letter-spacing: 0.05em;
-}
-
-.main__subtitle {
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 120%;
-  color: var(--main-text-color);
-}
-
-.footer__text {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 120%;
-  text-align: left;
 }
 
 .chart__bar-india {
@@ -137,4 +130,162 @@
 }
 .chart__bar-poland .chart__label {
   animation-delay: 3.9s;
+}
+
+.main__extra {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.button__back {
+  width: 300px;
+  height: 100px;
+  background-color: #ad0879;
+  clip-path: polygon(30px 0, 100% 0, 100% 100%, 30px 100%, 0 50px, 0 50px);
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+}
+
+.main__subtitle {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 120%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 150px;
+  height: 150px;
+  background-color: #00954d;
+  z-index: 2;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: left;
+  color: #fff;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 50px;
+}
+
+.footer__button {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.popup__overlay {
+  position: absolute;
+  inset: 0;
+  bottom: 150px;
+  background: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+}
+
+.popup__body {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 540px;
+  background: url("/images/slide03/popup_background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.popup__text {
+  opacity: 0;
+}
+
+.popup__close {
+  position: absolute;
+  top: 80px;
+  right: 150px;
+  width: 105px;
+  height: 70px;
+  background-color: #00954d;
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(
+    25px 0,
+    100% 0,
+    100% calc(100% - 25px),
+    calc(100% - 25px) 100%,
+    0 100%,
+    0 25px
+  );
+}
+
+.popup__content {
+  position: absolute;
+  left: 150px;
+  bottom: 300px;
+}
+
+.popup__text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: #646464;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes popupHide {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -100%;
+  }
+}
+
+@keyframes popupShow {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
 }
